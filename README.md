@@ -94,7 +94,7 @@ flowchart TD
         AstraDB -->|Top-10 Relevant Chunks| ContextBuilder[RAG Context Builder]
         ContextBuilder --> SystemPrompt[F1 Race Engineer System Prompt]
         SystemPrompt --> GeminiLLM["Gemini 3 Flash / 3.8 / 3.7\n(SSE Stream)"]
-        GeminiLLM -->|Stream Text + [Citations]| ChatCore
+        GeminiLLM -->|Stream Text and Citations| ChatCore
     end
 ```
 
